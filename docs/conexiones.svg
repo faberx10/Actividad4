@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" width="900" height="400" font-family="Segoe UI, Arial, sans-serif">
+  <rect x="0" y="0" width="900" height="400" rx="14" fill="#ffffff"/>
+  <text x="450" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#111827">Diagrama de conexiones – Actividad 4</text>
+
+  <!-- PC -->
+  <rect x="20" y="150" width="170" height="100" rx="10" fill="#eef2ff" stroke="#4338ca" stroke-width="2"/>
+  <text x="105" y="178" text-anchor="middle" font-size="15" font-weight="700" fill="#1e1b4b">PC / Portátil</text>
+  <text x="105" y="200" text-anchor="middle" font-size="12" fill="#312e81">Webcam integrada</text>
+  <text x="105" y="218" text-anchor="middle" font-size="12" fill="#312e81">Python + MediaPipe</text>
+  <text x="105" y="236" text-anchor="middle" font-size="12" fill="#312e81">gestos_esp32.py</text>
+
+  <!-- USB -->
+  <line x1="190" y1="200" x2="260" y2="200" stroke="#4b5563" stroke-width="4"/>
+  <text x="225" y="188" text-anchor="middle" font-size="11" fill="#374151">USB</text>
+  <text x="225" y="222" text-anchor="middle" font-size="10" fill="#374151">COM5</text>
+  <text x="225" y="235" text-anchor="middle" font-size="10" fill="#374151">115200</text>
+
+  <!-- ESP32 -->
+  <rect x="260" y="60" width="170" height="300" rx="10" fill="#1f2937"/>
+  <text x="345" y="92" text-anchor="middle" font-size="15" font-weight="700" fill="#f9fafb">ESP32</text>
+  <text x="345" y="110" text-anchor="middle" font-size="11" fill="#d1d5db">DevKit 30 pines</text>
+  <text x="345" y="170" text-anchor="middle" font-size="11" fill="#9ca3af">UART0 ← comandos</text>
+  <text x="345" y="186" text-anchor="middle" font-size="11" fill="#9ca3af">LEDC PWM 5 kHz / 8 bits</text>
+  <g font-size="12" font-weight="700" fill="#fde68a" text-anchor="end">
+    <text x="424" y="144">GPIO25</text>
+    <text x="424" y="214">GPIO26</text>
+    <text x="424" y="284">GPIO27</text>
+    <text x="424" y="344" fill="#e5e7eb">GND</text>
+  </g>
+
+  <!-- Fila 1: amarillo -->
+  <g stroke="#111827" stroke-width="2" fill="none">
+    <line x1="430" y1="140" x2="480" y2="140"/>
+    <polyline points="480,140 490,140 495,132 505,148 515,132 525,148 535,132 545,148 550,140 560,140"/>
+    <line x1="560" y1="140" x2="600" y2="140"/>
+    <line x1="630" y1="140" x2="760" y2="140"/>
+  </g>
+  <polygon points="600,128 600,152 628,140" fill="#facc15" stroke="#111827" stroke-width="2"/>
+  <line x1="630" y1="127" x2="630" y2="153" stroke="#111827" stroke-width="3"/>
+  <g stroke="#ca8a04" stroke-width="1.5"><line x1="614" y1="124" x2="622" y2="112"/><line x1="622" y1="126" x2="630" y2="114"/></g>
+  <text x="520" y="124" text-anchor="middle" font-size="11" fill="#374151">330 Ω</text>
+  <text x="780" y="136" font-size="12" font-weight="700" fill="#a16207">Amarillo 30 %</text>
+  <text x="780" y="151" font-size="11" fill="#4b5563">Puño</text>
+
+  <!-- Fila 2: azul -->
+  <g stroke="#111827" stroke-width="2" fill="none">
+    <line x1="430" y1="210" x2="480" y2="210"/>
+    <polyline points="480,210 490,210 495,202 505,218 515,202 525,218 535,202 545,218 550,210 560,210"/>
+    <line x1="560" y1="210" x2="600" y2="210"/>
+    <line x1="630" y1="210" x2="760" y2="210"/>
+  </g>
+  <polygon points="600,198 600,222 628,210" fill="#3b82f6" stroke="#111827" stroke-width="2"/>
+  <line x1="630" y1="197" x2="630" y2="223" stroke="#111827" stroke-width="3"/>
+  <g stroke="#1d4ed8" stroke-width="1.5"><line x1="614" y1="194" x2="622" y2="182"/><line x1="622" y1="196" x2="630" y2="184"/></g>
+  <text x="520" y="194" text-anchor="middle" font-size="11" fill="#374151">330 Ω</text>
+  <text x="780" y="206" font-size="12" font-weight="700" fill="#1d4ed8">Azul 70 %</text>
+  <text x="780" y="221" font-size="11" fill="#4b5563">Victoria</text>
+
+  <!-- Fila 3: rojo -->
+  <g stroke="#111827" stroke-width="2" fill="none">
+    <line x1="430" y1="280" x2="480" y2="280"/>
+    <polyline points="480,280 490,280 495,272 505,288 515,272 525,288 535,272 545,288 550,280 560,280"/>
+    <line x1="560" y1="280" x2="600" y2="280"/>
+    <line x1="630" y1="280" x2="760" y2="280"/>
+  </g>
+  <polygon points="600,268 600,292 628,280" fill="#ef4444" stroke="#111827" stroke-width="2"/>
+  <line x1="630" y1="267" x2="630" y2="293" stroke="#111827" stroke-width="3"/>
+  <g stroke="#b91c1c" stroke-width="1.5"><line x1="614" y1="264" x2="622" y2="252"/><line x1="622" y1="266" x2="630" y2="254"/></g>
+  <text x="520" y="264" text-anchor="middle" font-size="11" fill="#374151">330 Ω</text>
+  <text x="780" y="276" font-size="12" font-weight="700" fill="#b91c1c">Rojo 100 %</text>
+  <text x="780" y="291" font-size="11" fill="#4b5563">Palma abierta</text>
+
+  <!-- Riel GND -->
+  <line x1="760" y1="140" x2="760" y2="340" stroke="#111827" stroke-width="2"/>
+  <line x1="430" y1="340" x2="760" y2="340" stroke="#111827" stroke-width="2"/>
+  <g fill="#111827"><circle cx="760" cy="140" r="4"/><circle cx="760" cy="210" r="4"/><circle cx="760" cy="280" r="4"/></g>
+  <text x="595" y="358" text-anchor="middle" font-size="11" fill="#374151">GND común (riel negativo de la protoboard)</text>
+
+  <text x="615" y="96" text-anchor="middle" font-size="10" fill="#6b7280">ánodo (pata larga) ← → cátodo (pata corta)</text>
+  <text x="450" y="388" text-anchor="middle" font-size="11" fill="#6b7280">Pulgar abajo / pulgar arriba: secuencias Modo 1 y Modo 2 con los mismos tres LEDs</text>
+</svg>

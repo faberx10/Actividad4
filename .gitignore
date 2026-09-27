@@ -1,0 +1,5 @@
+.pio/
+.vscode/
+.venv/
+__pycache__/
+vision/gesture_recognizer.task
