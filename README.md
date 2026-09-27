@@ -1,7 +1,7 @@
 # Actividad 4 – Control de iluminación basado en gestos de la mano
 
 **Universidad Militar Nueva Granada – Ingeniería Mecatrónica**<br>
-**Asignatura:** Microcontroladores<br>
+**Asignatura:** Micros y Laboratorio<br>
 **Autor:** Faber Alexander Rodriguez Hernandez<br>
 **Código:** 7004488
 
