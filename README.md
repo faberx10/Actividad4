@@ -227,6 +227,12 @@ El brillo se recalcula cada 10 ms (100 actualizaciones por segundo), lo que da u
 
 ### 2.9 Resultados
 
+#### Video de evidencia
+
+https://github.com/user-attachments/assets/cac04a9c-a4d0-4095-a808-3fb11de021d8
+
+#### Observaciones
+
 - Los cinco gestos se reconocen con la webcam integrada del portátil y el cambio en los LEDs se ve **de inmediato** al hacer el gesto.
 - Al hacer un gesto que el modelo no reconoce, o al retirar la mano, los LEDs **mantienen el último comando**, como se esperaba.
 - Las secuencias se cortan en cuanto se hace un gesto distinto, gracias a la recepción por interrupción y al código no bloqueante.
